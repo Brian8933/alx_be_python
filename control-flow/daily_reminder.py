@@ -1,9 +1,14 @@
 # daily_reminder.py
 
 # Step 1: Collect user input
-task = input("Enter your task: ")
-priority = input("Priority (high/medium/low): ").lower()
-time_bound = input("Is it time-bound? (yes/no): ").lower()
+print("Enter your task:")
+task = input()
+
+print("Priority (high/medium/low):")
+priority = input().lower()
+
+print("Is it time-bound? (yes/no):")
+time_bound = input().lower()
 
 # Step 2: Process using match-case and if-statement
 match priority:
@@ -23,4 +28,5 @@ else:
     reminder += ". Consider completing it when you have free time."
 
 # Step 4: Output the result
-print("\nReminder:", reminder)
+print("Reminder:", reminder)
+
