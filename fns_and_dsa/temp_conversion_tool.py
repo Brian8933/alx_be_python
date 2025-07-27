@@ -1,3 +1,4 @@
+# Global conversion factors
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
 CELSIUS_TO_FAHRENHEIT_FACTOR = (9 / 5)
 
@@ -21,7 +22,7 @@ def main():
             result = convert_to_celsius(temperature)
             print(f"{temperature}°F is {result}°C")
         else:
-            raise ValueError("Invalid unit. Please enter 'C' or 'F'.")
+            raise ValueError
     except ValueError:
         print("Invalid temperature. Please enter a numeric value.")
 
